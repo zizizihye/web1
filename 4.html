@@ -3,16 +3,75 @@
 <head>
   <title> Laputa</title>
   <meta charset="utf-8">
+
+  <style>
+    a{
+      color:black;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    #active{
+      color: pink;
+      text-decoration: underline;}
+
+      ol{
+        border-right: 1px solid gray;
+        width: 100px;
+        margin:0;
+        padding:20px;
+      }
+
+      #grid{
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      }
+
+      #grid ol{
+        padding-left:20px;
+      }
+
+      #article{
+        padding-top:25px;
+        padding-left:25px;
+      }
+
+      .center {
+        display: block;
+        margin-top:100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .center2{
+        display: block;
+        margin-top:0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+    }
+
+  </style>
+
 </head>
 <body>
  <a href="index.html"><img src="main.png"></a>
-<ol>
-  <li><a href="1.html">지미사진</a></li>
-  <li><a href="2.html">일상사진</a></li>
-  <li><a href="3.html">한줄일기</a></li>
-  <li><a href="4.html">한줄댓글</a></li>
-</ol>
-<img src="menu4.png">
+
+<div id = "grid">
+  <ol>
+    <li><a href="1.html">지미사진</a></li>
+    <li><a href="2.html">일상사진</a></li>
+    <li><a href="3.html">한줄일기</a></li>
+    <li><a href="4.html" id="active">한줄댓글</a></li>
+  </ol>
+  <div id = "article">
+    <img src="menu4.png">
+  </div>
+</div>
+
+
 <div id="disqus_thread"></div>
 <script>
 
@@ -34,6 +93,29 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <!--댓글코드-->
+
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5ca5f0566bba460528013c6b/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  <!--채팅창-->
+
+  <a href="#top"><img src="test.png" width="100" class="center"></a>
+  <a class="center2">▲TOP</a>
+
+
+
+
 
 </body>
 </html>
